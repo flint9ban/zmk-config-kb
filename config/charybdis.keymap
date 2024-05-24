@@ -241,9 +241,9 @@
 
         number {
             bindings = <
-&trans  &kp trans  &kp trans     &kp trans     &kp trans       &kp trans    &kp KP_MULTIPLY     &kp N4  &kp N5  &kp N6  &kp PLUS &none
-&trans  &kp LCTRL  &kp LEFT_GUI  &kp LEFT_ALT  &kp LEFT_SHIFT  &kp trans    &kp KP_DIVIDE       &kp N1  &kp N2  &kp N3  &kp MINUS &trans
-&none   &kp trans  &kp trans     &kp trans     &kp trans       &kp trans    &kp N0              &kp N7  &kp N8  &kp N9  &kp DOT  &trans
+&trans  &trans     &trans        &trans        &trans          &trans    &kp KP_MULTIPLY     &kp N4  &kp N5  &kp N6  &kp PLUS &none
+&trans  &kp LCTRL  &kp LEFT_GUI  &kp LEFT_ALT  &kp LEFT_SHIFT  &trans    &kp KP_DIVIDE       &kp N1  &kp N2  &kp N3  &kp MINUS &trans
+&none   &trans     &trans        &trans        &trans          &trans    &kp N0              &kp N7  &kp N8  &kp N9  &kp DOT  &trans
                                  &trans   &trans   &trans      &trans       &trans
             >;
         };
