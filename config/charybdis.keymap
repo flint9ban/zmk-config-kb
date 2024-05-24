@@ -12,79 +12,62 @@
 
         bracket {
             bindings = <&kp LEFT_PARENTHESIS>;
-            key-positions = <19 20>;
+            key-positions = <6 7>;
             layers = <0>;
         };
 
         bracket_r {
             bindings = <&kp RIGHT_PARENTHESIS>;
-            key-positions = <21 20>;
+            key-positions = <8 7>;
             layers = <0>;
         };
 
         lb {
             bindings = <&kp LEFT_BRACKET>;
-            key-positions = <31 32>;
+            key-positions = <8 9>;
             layers = <0>;
         };
 
         rb {
             bindings = <&kp RIGHT_BRACKET>;
-            key-positions = <32 33>;
+            key-positions = <10 9>;
             layers = <0>;
         };
 
         lf {
             bindings = <&kp LEFT_BRACE>;
-            key-positions = <31 32>;
+            key-positions = <7 9>;
             layers = <0>;
         };
 
         rba {
             bindings = <&kp RIGHT_BRACE>;
-            key-positions = <32 33>;
+            key-positions = <8 10>;
             layers = <0>;
         };
 
-        plus {
-            bindings = <&kp PLUS>;
-            key-positions = <16 17>;
-            layers = <0>;
-        };
-
-        minus {
-            bindings = <&kp MINUS>;
-            key-positions = <19 18>;
-            layers = <0>;
-        };
 
         caret {
             bindings = <&kp CARET>;
-            key-positions = <7 8>;
+            key-positions = <0 1>;
             layers = <0>;
         };
 
         underscore {
             bindings = <&kp UNDERSCORE>;
-            key-positions = <30 31>;
-            layers = <0>;
-        };
-
-        multiplu {
-            bindings = <&kp KP_ASTERISK>;
-            key-positions = <9 10>;
+            key-positions = <16 17>;
             layers = <0>;
         };
 
         pipe {
             bindings = <&kp PIPE>;
-            key-positions = <21 22>;
+            key-positions = <26 27>;
             layers = <0>;
         };
 
         and {
             bindings = <&kp AMPERSAND>;
-            key-positions = <9 8>;
+            key-positions = <14 15>;
             layers = <0>;
         };
 
@@ -96,13 +79,7 @@
 
         tick {
             bindings = <&kp GRAVE>;
-            key-positions = <0 1>;
-            layers = <0>;
-        };
-
-        enter {
-            bindings = <&kp ENTER>;
-            key-positions = <37 38>;
+            key-positions = <31 32>;
             layers = <0>;
         };
 
@@ -120,7 +97,7 @@
 
         equal {
             bindings = <&kp EQUAL>;
-            key-positions = <28 29>;
+            key-positions = <30 29>;
             layers = <0>;
         };
 
@@ -131,43 +108,61 @@
         };
 
         tilde {
-            bindings = <&kp DOLLAR>;
-            key-positions = <15 16>;
+            bindings = <&kp TILDE>;
+            key-positions = <32 33>;
             layers = <0>;
         };
 
         exam {
             bindings = <&kp EXCL>;
-            key-positions = <1 2>;
+            key-positions = <25 26>;
             layers = <0>;
         };
 
-        backspace {
-            bindings = <&kp BACKSPACE>;
-            key-positions = <14 15>;
-            layers = <0>;
-        };
-
-        delete {
-            bindings = <&kp DELETE>;
-            key-positions = <26 27>;
-            layers = <0>;
-        };
-
-        rclk {
-            bindings = <&mkp RCLK>;
-            key-positions = <19 20>;
-            layers = <1>;
-        };
-
-        lclk {
-            bindings = <&kp ENTER>;
+        bslh {
+            bindings = <&kp BSLH>;
             key-positions = <15 16>;
-            layers = <1>;
+            layers = <0>;
+        };
+ 
+        sqt {
+            bindings = <&kp SQT>;
+            key-positions = <27 28>;
+            layers = <0>;
+        };
+
+        dqt {
+            bindings = <&kp DQT>;
+            key-positions = <28 29>;
+            layers = <0>;
+        };
+
+        left {
+            bindings = <&kp LEFT>;
+            key-positions = <7 21>;
+            layers = <0>;
+        };
+
+        right {
+            bindings = <&kp DQT>;
+            key-positions = <33 21>;
+            layers = <0>;
+        };
+
+        up {
+            bindings = <&kp DQT>;
+            key-positions = <9 29>;
+            layers = <0>;
+        };
+
+        down {
+            bindings = <&kp DQT>;
+            key-positions = <31 29>;
+            layers = <0>;
         };
 
         switch {
-            bindings = <&mo 9>;
+            bindings = <&mo 6>;
             key-positions = <39 40>;
         };
     };
@@ -205,12 +200,12 @@
     keymap {
         compatible = "zmk,keymap";
 
-        colemak-dh {
+        default-dh {
             bindings = <
-&kp TAB           &kp Q            &kp W            &kp F         &kp P              &kp B        &kp J        &kp L                 &kp U                 &kp Y             &kp SEMI     &kp BACKSLASH
-&mt RCTRL ESCAPE  &hml LEFT_GUI A  &hml LEFT_ALT R  &hml LCTRL S  &hml LEFT_SHIFT T  &kp G        &kp M        &hmr RIGHT_SHIFT N    &hmr RIGHT_CONTROL E  &hmr RIGHT_ALT I  &hmr RGUI O  &kp APOS
-&kp LSHFT         &kp Z            &kp X            &kp C         &kp D              &kp V        &kp K        &kp H                 &kp COMMA             &kp DOT           &kp FSLH     &sl 10
-                                                    &kp LCMD      &mo 7              &kp SPACE    &lt 8 ENTER  &mt DELETE BACKSPACE
+&kp TAB           &kp Q            &kp W            &kp E         &kp R              &kp T        &kp Y        &kp U                 &kp I                 &kp O             &kp P        &kp BACKSLASH
+&mt RCTRL ESCAPE  &hml LCTRL A  &hml LEFT_GUI S  &hml LEFT_ALT D  &hml LEFT_SHIFT F  &kp G        &kp H        &hmr RIGHT_SHIFT J    &hmr RIGHT_ALT K  &hmr RGUI L  &hmr RIGHT_CONTROL SEMI  &kp APOS
+&kp LSHFT         &kp Z            &kp X            &kp C         &kp V              &kp B        &kp N        &kp M                 &kp COMMA             &kp DOT           &kp FSLH     &sl 6
+                                                    &lt 5 TAB     &lt 4 ENTER        &lt 3 ESCAPE    &lt 3 SPACE  &mt DELETE BACKSPACE
             >;
         };
 
@@ -218,21 +213,11 @@
             bindings = <
 &trans  &trans  &trans    &trans    &trans     &trans    &trans  &trans     &trans    &trans     &trans  &trans
 &trans  &trans  &trans    &trans    &trans     &trans    &trans  &trans     &trans    &trans     &trans  &trans
-&trans  &none   &mkp MB1  &mkp MB3  &mkp RCLK  &trans    &trans  &mkp LCLK  &mkp MB3  &mkp RCLK  &mo 3   &trans
-                          &trans    &mo 3      &trans    &trans  &trans
+&trans  &none   &mkp MB1  &mkp MB3  &mkp RCLK  &trans    &trans  &mkp LCLK  &mkp MB3  &mkp RCLK  &mo 2   &trans
+                          &trans    &mo 2      &trans    &trans  &trans
             >;
         };
 
-        snipe {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &mo 3
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &mo 2
-                        &trans  &trans  &trans    &trans  &trans
-            >;
-
-            label = "snipe";
-        };
 
         scroll {
             bindings = <
@@ -245,39 +230,21 @@
             label = "scroll";
         };
 
-        colemak-dh_without_hrm {
+        default-dh_without_hrm {
             bindings = <
-&kp TAB  &kp Q  &kp W  &kp F   &kp P   &kp B     &kp J   &kp L   &kp U      &kp Y    &kp SEMI  &kp BSPC
-&trans   &kp A  &kp R  &kp S   &kp T   &kp G     &kp M   &kp N   &kp E      &kp I    &kp O     &kp APOS
-&trans   &kp Z  &kp X  &kp C   &kp D   &kp V     &kp K   &kp H   &kp COMMA  &kp DOT  &kp FSLH  &trans
-                       &trans  &trans  &trans    &trans  &trans
-            >;
-        };
-
-        bf5 {
-            bindings = <
-&kp TAB           &kp Q  &kp W  &kp E     &kp R   &kp T        &kp Y   &kp U   &kp I      &kp O    &kp P     &trans
-&mt RCTRL ESCAPE  &kp A  &kp S  &kp D     &kp F   &kp G        &kp H   &kp J   &kp K      &kp L    &kp SEMI  &trans
-&kp LSHFT         &kp Z  &kp X  &kp C     &kp V   &kp B        &kp N   &kp M   &kp COMMA  &kp DOT  &kp FSLH  &trans
-                                &kp LALT  &kp N1  &kp SPACE    &trans  &trans
-            >;
-        };
-
-        war_thuner {
-            bindings = <
-&kp TAB    &kp Q  &kp W  &kp E    &kp R  &kp T        &kp Y   &kp U   &kp I      &kp O    &kp P     &trans
-&kp LCTRL  &kp A  &kp S  &kp D    &kp F  &kp G        &kp H   &kp J   &kp K      &kp L    &kp SEMI  &trans
-&kp LSHFT  &kp Z  &kp X  &kp C    &kp V  &kp B        &kp N   &kp M   &kp COMMA  &kp DOT  &kp FSLH  &trans
-                         &kp DOT  &mo 7  &kp SPACE    &trans  &trans
+&kp TAB  &kp Q  &kp W  &kp E   &kp R   &kp T     &kp Y   &kp U   &kp I      &kp O    &kp P  &kp BSPC
+&trans   &kp A  &kp S  &kp D   &kp F   &kp G     &kp H   &kp J   &kp K      &kp L    &kp SEMI     &kp APOS
+&trans   &kp Z  &kp X  &kp C   &kp V   &kp B     &kp N   &kp M   &kp COMMA  &kp DOT  &kp FSLH  &trans
+                       &trans  &trans  &trans    &trans  &mo 6
             >;
         };
 
         number {
             bindings = <
-&trans  &kp KP_MULTIPLY  &kp N7  &kp N8  &kp N9  &kp PLUS     &none     &none     &none         &none      &none  &none
-&trans  &kp KP_DIVIDE    &kp N4  &kp N5  &kp N6  &kp MINUS    &kp LEFT  &kp DOWN  &kp UP_ARROW  &kp RIGHT  &none  &trans
-&none   &kp DOT          &kp N1  &kp N2  &kp N3  &kp N0       &none     &none     &none         &none      &none  &trans
-                                 &none   &none   &trans       &mo 9     &trans
+&trans  &kp trans  &kp trans     &kp trans     &kp trans       &kp trans    &kp KP_MULTIPLY     &kp N4  &kp N5  &kp N6  &kp PLUS &none
+&trans  &kp LCTRL  &kp LEFT_GUI  &kp LEFT_ALT  &kp LEFT_SHIFT  &kp trans    &kp KP_DIVIDE       &kp N1  &kp N2  &kp N3  &kp MINUS &trans
+&none   &kp trans  &kp trans     &kp trans     &kp trans       &kp trans    &kp N0              &kp N7  &kp N8  &kp N9  &kp DOT  &trans
+                                 &trans   &trans   &trans      &trans       &trans
             >;
         };
 
@@ -286,7 +253,7 @@
 &none  &kp F12  &kp F7  &kp F8  &kp F9  &kp PRINTSCREEN    &none  &none      &none      &none     &none     &none
 &none  &kp F11  &kp F4  &kp F5  &kp F6  &kp SCROLLLOCK     &none  &kp LSHFT  &kp LCTRL  &kp LALT  &kp LGUI  &none
 &none  &kp F10  &kp F1  &kp F2  &kp F3  &kp PAUSE_BREAK    &none  &none      &none      &none     &none     &none
-                        &none   &none   &mo 9              &none  &trans
+                        &trans   &trans   &trans           &trans  &trans
             >;
         };
 
@@ -299,15 +266,6 @@
             >;
 
             label = "switch";
-        };
-
-        greek {
-            bindings = <
-&trans  &el_theta  &el_omega  &el_phi    &el_pi     &el_beta     &trans     &el_lambda  &el_upsilon  &el_psi   &trans       &trans
-&trans  &el_alpha  &el_rho    &el_sigma  &el_tau    &el_gamma    &el_mu     &el_nu      &el_epsilon  &el_iota  &el_omikron  &trans
-&trans  &el_zeta   &el_xi     &el_chi    &el_delta  &el_theta    &el_kappa  &el_eta     &trans       &trans    &trans       &trans
-                              &trans     &trans     &trans       &trans     &trans
-            >;
         };
     };
 };
