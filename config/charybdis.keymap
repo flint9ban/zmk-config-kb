@@ -213,7 +213,7 @@
             bindings = <
 &trans  &trans  &trans    &trans    &trans     &trans    &trans  &trans     &trans    &trans     &trans  &trans
 &trans  &trans  &trans    &trans    &trans     &trans    &trans  &trans     &trans    &trans     &trans  &trans
-&trans  &none   &mkp MB1  &mkp MB3  &mkp RCLK &mo 2    &trans  &mkp LCLK  &mkp MB3  &mkp RCLK  &mo 2   &trans
+&trans  &none   &mkp MB2  &mkp MB3  &mkp LCLK &mo 2    &trans  &mkp LCLK  &mkp MB3  &mkp RCLK  &mo 2   &trans
                           &trans    &trans      &trans    &trans  &trans
             >;
         };
