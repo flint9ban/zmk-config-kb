@@ -157,7 +157,7 @@
 
         lclk {
             bindings = <&mkp LCLK>;
-            key-positions = <35 34>;
+            key-positions = <33 34>;
             layers = <0 1>;
         };
 
