@@ -1,4 +1,4 @@
-#include <behaviors/mouse_keys.dtsi>
+v#include <behaviors/mouse_keys.dtsi>
 #include "helper.h"
 #include "greek.dtsi"
 #include <behaviors.dtsi>
@@ -42,7 +42,7 @@
 
         rba {
             bindings = <&kp RIGHT_BRACE>;
-            key-positions = <8 10>;
+            key-positions = <7 10>;
             layers = <0 1>;
         };
 
@@ -90,7 +90,7 @@
         };
 
         dollar {
-            bindings = <&kp TILDE>;
+            bindings = <&kp DLLR>;
             key-positions = <4 5>;
             layers = <0 1>;
         };
