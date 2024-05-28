@@ -161,6 +161,12 @@
             layers = <0 1>;
         };
 
+        scorll {
+            bindings = <&mo 2>;
+            key-positions = <33 31>;
+            layers = <0 1>;
+        };
+
         switch {
             bindings = <&mo 6>;
             key-positions = <39 40>;
