@@ -79,7 +79,7 @@
 
         tick {
             bindings = <&kp GRAVE>;
-            key-positions = <31 32>;
+            key-positions = <34 35>;
             layers = <0 1>;
         };
 
@@ -103,7 +103,7 @@
 
         tilde {
             bindings = <&kp TILDE>;
-            key-positions = <32 33>;
+            key-positions = <31 33>;
             layers = <0 1>;
         };
 
@@ -113,8 +113,8 @@
             layers = <0 1>;
         };
 
-        fslh {
-            bindings = <&kp FSLH>;
+        bslh {
+            bindings = <&kp BSLH>;
             key-positions = <26 28>;
             layers = <0 1>;
         };
@@ -157,13 +157,19 @@
 
         lclk {
             bindings = <&mkp LCLK>;
-            key-positions = <33 34>;
+            key-positions = <31 32>;
+            layers = <0 1>;
+        };
+
+        rclk {
+            bindings = <&mkp RCLK>;
+            key-positions = <33 32>;
             layers = <0 1>;
         };
 
         scorll {
             bindings = <&mo 2>;
-            key-positions = <33 31>;
+            key-positions = <31 33 32>;
             layers = <0 1>;
         };
 
