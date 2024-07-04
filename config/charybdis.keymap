@@ -175,13 +175,13 @@
 
         tomouse {
             bindings = <&to 1>;
-            key-positions = <31 33 32 34>;
+            key-positions = <30 31 32>;
             layers = <0>;
         };
 
         backmouse {
             bindings = <&to 0>;
-            key-positions = <31 33 32 34>;
+            key-positions = <30 31 32>;
             layers = <1>;
         };
         switch {
