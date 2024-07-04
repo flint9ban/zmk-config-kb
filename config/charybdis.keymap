@@ -173,6 +173,17 @@
             layers = <0 1>;
         };
 
+        tomouse {
+            bindings = <&to 1>;
+            key-positions = <31 33 32 34>;
+            layers = <0>;
+        };
+
+        backmouse {
+            bindings = <&to 0>;
+            key-positions = <31 33 32 34>;
+            layers = <1>;
+        };
         switch {
             bindings = <&mo 6>;
             key-positions = <39 40>;
@@ -225,8 +236,8 @@
             bindings = <
 &trans  &trans  &trans    &trans    &trans     &trans    &trans  &trans     &trans    &trans     &trans  &trans
 &trans  &trans  &trans    &trans    &trans     &trans    &trans  &trans     &trans    &trans     &trans  &trans
-&trans  &none   &mkp MB2  &mkp MB3  &mkp LCLK &mo 2    &trans  &mkp LCLK  &mkp MB3  &mkp RCLK  &mo 2   &trans
-                          &trans    &trans      &trans    &trans  &trans
+&trans  &none   &mkp MB2  &mkp MB3  &mkp LCLK &mo 2    &mkp MB4  &mkp LCLK  &mo 2 &mkp RCLK  &mkp MB5   &trans
+                          &trans    &trans      &trans    &trans  &mkp MB3
             >;
         };
 
