@@ -173,17 +173,12 @@
             layers = <0 1>;
         };
 
-        tomouse {
-            bindings = <&to 1>;
-            key-positions = <30 31 32>;
-            layers = <0>;
+        togglemouse {
+            bindings = <&tog 1>;
+            key-positions = <31 32 33 34>;
+            layers = <0 1>;
         };
 
-        backmouse {
-            bindings = <&to 0>;
-            key-positions = <30 31 32>;
-            layers = <1>;
-        };
         switch {
             bindings = <&mo 6>;
             key-positions = <39 40>;
