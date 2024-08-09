@@ -168,7 +168,7 @@
         };
 
         scorll {
-            bindings = <&mo 2>;
+            bindings = <&sl 2>;
             key-positions = <31 33 32>;
             layers = <0 1>;
         };
@@ -232,7 +232,7 @@
 
         scroll {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &tog 1  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
                         &trans  &trans  &trans    &trans  &trans
