@@ -11,6 +11,16 @@
 };
 
 / {
+   macros {
+        to_mouse_click: tmk{
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&to 1>
+                , <&mkp LCLK>
+                ;
+        };
+    };
     combos {
         compatible = "zmk,combos";
 
