@@ -12,7 +12,7 @@
 
 / {
    macros {
-        to_mouse_click: tmk{
+        tmk: tmk{
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
@@ -248,7 +248,7 @@
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &tog 1  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &to 1   &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &tmk   &trans  &trans  &trans  &trans
                         &trans  &trans  &trans    &trans  &trans
             >;
 
