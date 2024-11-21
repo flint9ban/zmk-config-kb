@@ -236,7 +236,7 @@
 &kp TAB           &kp Q            &kp W            &kp E         &kp R              &kp T        &kp Y        &kp U                 &kp I                 &kp O             &kp P        &kp BACKSLASH
 &mt RCTRL ESCAPE  &hml LCTRL A  &hml LEFT_GUI S  &hml LEFT_ALT D  &hml LEFT_SHIFT F  &kp G        &kp H        &hmr RIGHT_SHIFT J    &hmr RIGHT_ALT K  &hmr RGUI L  &hmr RIGHT_CONTROL SEMI  &kp APOS
 &kp LSHFT         &lt 1 Z            &kp X            &kp C         &kp V              &kp B        &kp N        &kp M                 &kp COMMA             &kp DOT           &lt 1 FSLH     &sl 6
-                                                    &lt 5 TAB     &lt 4 ENTER        &lt 1 ESCAPE    &lt 3 SPACE  &kp BACKSPACE
+                                                    &lt 5 TAB     &lt 4 ENTER        &lt 1 ESCAPE    &lt 3 SPACE  &lt 7 BACKSPACE
             >;
         };
         Mouse {
@@ -265,7 +265,7 @@
 &kp TAB  &kp Q  &kp W  &kp E   &kp R   &kp T     &kp Y   &kp U   &kp I      &kp O    &kp P  &kp BSPC
 &trans   &kp A  &kp S  &kp D   &kp F   &kp G     &kp H   &kp J   &kp K      &kp L    &kp SEMI     &kp APOS
 &trans   &kp Z  &kp X  &kp C   &kp V   &kp B     &kp N   &kp M   &kp COMMA  &kp DOT  &tog 1 &trans
-                       &kp LEFT_PARENTHESIS   &kp RIGHT_PARENTHESIS  &trans    &trans  &kp BACKSPACE
+                       &trans   &trans  &trans    &trans  &kp BACKSPACE
             >;
         };
 
@@ -297,6 +297,15 @@
             >;
 
             label = "switch";
+        };
+        direction {
+            bindings = <
+&trans      &btrans       &trans        &trans        &trans        &trans          &trans  &trans  &trans  &trans       &trans  &trans
+&trans      &trans        &trans        &trans         &trans       &trans          &kp LEFT_BRACKET  &kp LEFT_PARENTHESIS &kp UP    &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET &trans
+&trans      &trans        &trans        &trans         &trans       &trans          &kp LEFT_BRACE  &kp LEFT &kp DOWN &kp RIGHT &kp RIGHT_BRACE &trans
+                                        &trans        &trans        &trans          &trans  &trans
+            >;
+
         };
     };
 };
