@@ -235,16 +235,16 @@
             bindings = <
 &kp TAB           &kp Q            &kp W            &kp E         &kp R              &kp T        &kp Y        &kp U                 &kp I                 &kp O             &kp P        &kp BACKSLASH
 &mt RCTRL ESCAPE  &hml LCTRL A  &hml LEFT_GUI S  &hml LEFT_ALT D  &hml LEFT_SHIFT F  &kp G        &kp H        &hmr RIGHT_SHIFT J    &hmr RIGHT_ALT K  &hmr RGUI L  &hmr RIGHT_CONTROL SEMI  &kp APOS
-&kp LSHFT         &kp Z            &kp X            &kp C         &kp V              &kp B        &kp N        &kp M                 &kp COMMA             &kp DOT           &kp FSLH     &sl 6
-                                                    &lt 5 TAB     &lt 4 ENTER        &lt 1 ESCAPE    &lt 3 SPACE  &lt 1 BACKSPACE
+&kp LSHFT         &lt 1 Z            &kp X            &kp C         &kp V              &kp B        &kp N        &kp M                 &kp COMMA             &kp DOT           &lt 1 FSLH     &sl 6
+                                                    &lt 5 TAB     &lt 4 ENTER        &lt 1 ESCAPE    &lt 3 SPACE  &kp BACKSPACE
             >;
         };
         Mouse {
             bindings = <
 &trans  &trans  &trans    &trans    &trans     &trans    &trans  &trans     &kp UP   &trans     &tog 1  &trans
 &trans  &trans  &trans    &trans    &trans     &trans    &trans  &kp LEFT   &kp DOWN &kp RIGHT &trans  &trans
-&trans  &none   &mkp MB2  &mkp MB3  &mkp LCLK &mo 2    &mkp MB4  &mkp LCLK  &sl 2 &mkp RCLK  &mkp MB5   &trans
-                          &trans    &trans      &trans    &trans  &trans
+&trans  &trans  &mo 2     &trans    &mkp MB4   &mkp MB5  &mkp MB5 &mkp MB4  &sl 2 &mo 2  &trans   &trans
+                          &mkp LCLK &mkp RCLK &mkp MB3   &mkp RCLK  &mkp LCLK
             >;
         };
 
@@ -265,7 +265,7 @@
 &kp TAB  &kp Q  &kp W  &kp E   &kp R   &kp T     &kp Y   &kp U   &kp I      &kp O    &kp P  &kp BSPC
 &trans   &kp A  &kp S  &kp D   &kp F   &kp G     &kp H   &kp J   &kp K      &kp L    &kp SEMI     &kp APOS
 &trans   &kp Z  &kp X  &kp C   &kp V   &kp B     &kp N   &kp M   &kp COMMA  &kp DOT  &tog 1 &trans
-                       &kp TAB  &kp ENTER  &trans    &trans  &kp BACKSPACE
+                       &kp LEFT_PARENTHESIS   &kp RIGHT_PARENTHESIS  &trans    &trans  &kp BACKSPACE
             >;
         };
 
@@ -281,7 +281,7 @@
         fun {
             bindings = <
 &none  &kp F12  &kp F7  &kp F8  &kp F9  &mkp LCLK    &none  &none      &none      &kp LEFT_BRACE &kp RIGHT_BRACE &none
-&none  &kp F11  &kp F4  &kp F5  &kp F6  &kp SCROLLLOCK     &none  &kp LSHFT  &kp LGUI   &kp LALT  &kp LCTRL  &none
+&none  &kp F11  &kp F4  &kp F5  &kp F6  &kp CLCK     &none  &kp LSHFT  &kp LGUI   &kp LALT  &kp LCTRL  &none
 &none  &kp F10  &kp F1  &kp F2  &kp F3  &kp PAUSE_BREAK    &none  &none      &none      &none     &none     &none
                         &trans   &trans   &trans           &trans  &trans
             >;
