@@ -300,7 +300,7 @@
         };
         direction {
             bindings = <
-&trans      &btrans       &trans        &trans        &trans        &trans          &trans  &trans  &trans  &trans       &trans  &trans
+&trans      &trans       &trans        &trans        &trans        &trans          &trans  &trans  &trans  &trans       &trans  &trans
 &trans      &trans        &trans        &trans         &trans       &trans          &kp LEFT_BRACKET  &kp LEFT_PARENTHESIS &kp UP    &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET &trans
 &trans      &trans        &trans        &trans         &trans       &trans          &kp LEFT_BRACE  &kp LEFT &kp DOWN &kp RIGHT &kp RIGHT_BRACE &trans
                                         &trans        &trans        &trans          &trans  &trans
