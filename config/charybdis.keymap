@@ -280,8 +280,8 @@
 
         fun {
             bindings = <
-&none  &kp F12  &kp F7  &kp F8  &kp F9  &mkp LCLK    &none   &kp LALT(N4)  &kp LALT(N5)   &kp LALT(N6) &kp RIGHT_BRACE &none
-&none  &hml LCTRL F11  &hml LEFT_GUI F4  &hml LEFT_ALT F5  &hml LEFT_SHIFT F6  &kp CLCK     &none  &kp LALT(N1)  &kp LALT(N2)   &kp LALT(N3)  &kp LCTRL  &none
+&none  &kp F12  &kp F7  &kp F8  &kp F9  &mkp LCLK    &none   &kp LA(N4)  &kp LA(N5)   &kp LA(N6) &kp RIGHT_BRACE &none
+&none  &hml LCTRL F11  &hml LEFT_GUI F4  &hml LEFT_ALT F5  &hml LEFT_SHIFT F6  &kp CLCK     &none  &kp LA(N1)  &kp LA(N2)   &kp LA(N3)  &kp LCTRL  &none
 &none  &kp F10  &kp F1  &kp F2  &kp F3  &kp PAUSE_BREAK    &none  &none      &none      &none     &none     &none
                         &trans   &trans   &trans           &trans  &trans
             >;
