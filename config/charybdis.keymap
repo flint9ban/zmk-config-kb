@@ -243,17 +243,29 @@
             require-prior-idle-ms = <250>;
             hold-trigger-on-release;
         };
-        td_m: tap_dance_r {
+        td_m: tap_dance_m {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <300>;
-            bindings = <&kp M>, <&msc SCRL_UP>, <&msc SCRL_DOWN>;
+            bindings = <&kp M>, <&msc SCRL_UP>;
         };
-        td_i: tap_dance_t {
+        td_n: tap_dance_n {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&kp I>, <&msc SCRL_RIGHT>, <&msc SCRL_LEFT>;
+            bindings = <&kp N>, <&msc SCRL_DOWN>;
+        };
+        td_v: tap_dance_v {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <300>;
+            bindings = <&kp V>, <&msc SCRL_RIGHT>;
+        };
+        td_b: tap_dance_b {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp B>, <&msc SCRL_LEFT>;
         };
     };
 
@@ -262,9 +274,9 @@
 
         default-dh {
             bindings = <
-&kp TAB           &kp Q            &kp W            &kp E         &kp R  &kp T   &kp Y        &kp U                 &td_i                 &kp O             &kp P        &kp BACKSLASH
+&kp TAB           &kp Q            &kp W            &kp E         &kp R  &kp T   &kp Y        &kp U                 &td                 &kp O             &kp P        &kp BACKSLASH
 &mt RCTRL ESCAPE  &hml LCTRL A  &hml LEFT_GUI S  &hml LEFT_ALT D  &hml LEFT_SHIFT F  &kp G        &kp H        &hmr RIGHT_SHIFT J    &hmr RIGHT_ALT K  &hmr RGUI L  &hmr RIGHT_CONTROL SEMI  &kp APOS
-&kp LSHFT         &lt 1 Z            &kp X            &kp C         &lt 1 V              &kp B        &kp N        &td_m                 &kp COMMA             &kp DOT           &lt 1 FSLH     &sl 6
+&kp LSHFT         &lt 1 Z            &kp X            &kp C         &lt 1 td_v              &td_b       &td_n        &td_m                 &kp COMMA             &kp DOT           &lt 1 FSLH     &sl 6
                                                     &lt 5 TAB     &lt 4 ENTER        &lt 1 ESCAPE    &lt 3 SPACE  &lt 7 BACKSPACE
             >;
         };
