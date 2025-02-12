@@ -241,9 +241,9 @@
         };
         Mouse {
             bindings = <
-&trans  &trans  &trans    &msc SCRL_UP    &trans     &trans    &trans  &trans     &kp UP   &trans     &tog 1  &trans
+&trans  &trans  &trans    &trans    &trans     &trans    &trans  &trans     &kp UP   &trans     &tog 1  &trans
 &trans  &msc SCRL_RIGHT  &msc SCRL_LEFT    &msc SCRL_DOWN    &trans     &trans    &trans  &kp LEFT   &kp DOWN &kp RIGHT &trans  &trans
-&trans  &trans  &mo 2     &trans    &trans   &mkp MB5  &mkp MB5 &mkp MB4  &sl 2 &mo 2  &trans   &trans
+&trans  &trans  &mo 2     &msc SCRL_UP    &trans   &mkp MB5  &mkp MB5 &mkp MB4  &sl 2 &mo 2  &trans   &trans
                           &mkp LCLK &mkp RCLK &mkp MB3   &mkp RCLK  &mkp LCLK
             >;
         };
