@@ -98,7 +98,7 @@
 
         scroll_right {
             bindings = <&msc SCRL_RIGHT>;
-            key-positions = <2 16>;
+            key-positions = <3 14>;
             layers = <0 1>;
         };
 
@@ -109,13 +109,13 @@
         };
         scroll_left {
             bindings = <&msc SCRL_LEFT>;
-            key-positions = <16 27>;
+            key-positions = <3 13 14>;
             layers = <0 1>;
         };
 
         scroll_down {
             bindings = <&msc SCRL_DOWN>;
-            key-positions = <16 26>;
+            key-positions = <2 3 16>;
             layers = <0 1>;
         };
 
