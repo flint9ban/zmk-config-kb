@@ -243,13 +243,13 @@
             require-prior-idle-ms = <250>;
             hold-trigger-on-release;
         };
-        td_r: tap_dance {
+        td_r: tap_dance_r {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
             bindings = <&kp R>, <&msc SCRL_UP>, <&msc SCRL_DOWN>;
         };
-        td_t: tap_dance {
+        td_t: tap_dance_t {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
