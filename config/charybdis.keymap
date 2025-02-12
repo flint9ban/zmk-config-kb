@@ -243,30 +243,15 @@
             require-prior-idle-ms = <250>;
             hold-trigger-on-release;
         };
-        td_m: tap_dance_m {
-            compatible = "zmk,behavior-tap-dance";
-            #binding-cells = <0>;
-            tapping-term-ms = <300>;
-            bindings = <&kp M>, <&msc SCRL_UP>;
+        th: tap_hold {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;    // <---[[moderate duration]]
+            quick-tap-ms = <0>;
+            flavor = "balanced";
+            bindings = <&msc>, <&kp>;
         };
-        td_n: tap_dance_n {
-            compatible = "zmk,behavior-tap-dance";
-            #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&kp N>, <&msc SCRL_DOWN>;
-        };
-        td_v: tap_dance_v {
-            compatible = "zmk,behavior-tap-dance";
-            #binding-cells = <0>;
-            tapping-term-ms = <300>;
-            bindings = <&kp V>, <&msc SCRL_RIGHT>;
-        };
-        td_b: tap_dance_b {
-            compatible = "zmk,behavior-tap-dance";
-            #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&kp B>, <&msc SCRL_LEFT>;
-        };
+        
     };
 
     keymap {
@@ -276,7 +261,7 @@
             bindings = <
 &kp TAB           &kp Q            &kp W            &kp E         &kp R  &kp T   &kp Y        &kp U                 &kp I                 &kp O             &kp P        &kp BACKSLASH
 &mt RCTRL ESCAPE  &hml LCTRL A  &hml LEFT_GUI S  &hml LEFT_ALT D  &hml LEFT_SHIFT F  &kp G        &kp H        &hmr RIGHT_SHIFT J    &hmr RIGHT_ALT K  &hmr RGUI L  &hmr RIGHT_CONTROL SEMI  &kp APOS
-&kp LSHFT         &lt 1 Z            &kp X            &kp C         &td_v              &td_b       &td_n        &td_m                 &kp COMMA             &kp DOT           &lt 1 FSLH     &sl 6
+&kp LSHFT         &lt 1 Z            &kp X            &kp C       &th SCRL_RIGHT V  &th SCRL_LEFT B     &th SCRL_DOWN N &th SCRL_UP M                 &kp COMMA             &kp DOT           &lt 1 FSLH     &sl 6
                                                     &lt 5 TAB     &lt 4 ENTER        &lt 1 ESCAPE    &lt 3 SPACE  &lt 7 BACKSPACE
             >;
         };
