@@ -30,7 +30,7 @@
         };
 
         bracket_r {
-            bindings = <&kp RIGHT_PARENTHESIS>;,
+            bindings = <&kp RIGHT_PARENTHESIS>;
             key-positions = <8 7>;
             layers = <0 1>;
         };
