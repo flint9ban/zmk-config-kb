@@ -329,7 +329,7 @@
 &trans      &trans       &trans        &trans        &trans        &trans          &trans  &trans  &trans  &trans       &trans  &kp C_AC_PRINT
 &trans      &sk LCTRL    &sk LEFT_GUI  &sk LEFT_ALT  &sk LEFT_SHIFT      &trans          &kp LEFT_BRACKET  &kp LEFT_PARENTHESIS &kp UP    &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET &trans
 &trans      &trans        &trans        &trans         &trans       &trans          &kp LEFT_BRACE  &kp LEFT &kp DOWN &kp RIGHT &kp RIGHT_BRACE &trans
-                                        &kp LC(LALT)     &kp LSHFT        &trans          &trans  &trans
+                                       &kp LC(LALT)     &kp LSHFT        &trans          &trans  &trans
             >;        
 
         };
