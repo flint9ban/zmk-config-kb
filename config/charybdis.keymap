@@ -269,7 +269,7 @@
             bindings = <
 &kp TAB    &kp Q    &kp W  &kp E  &kp R  &kp T    &trans  &kp LG(LCTRL)     &kp UP   &trans     &tog 1  &trans
 &trans     &kp A    &kp S  &kp D  &kp F  &kp G    &kp LGUI  &kp LA(LCTRL)   &kp DOWN &kp RIGHT &trans  &trans
-&trans     &kp Z    &kp X  &kp C  &kp V  &kp B    &kp LS(LCTRL) &LS(LGUI)  &sl 2 &mo 2  &trans   &trans
+&trans     &kp Z    &kp X  &kp C  &kp V  &kp B    &kp LS(LCTRL) &kp LS(LGUI)  &sl 2 &mo 2  &trans   &trans
                           &mkp LCLK &mkp RCLK &mkp MB3   &trans  &mkp LCLK
             >;
         };
