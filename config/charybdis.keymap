@@ -259,19 +259,19 @@
 
         default-dh { 
             bindings = <
-&kp TAB           &kp Q            &kp W            &kp E         &kp R  &kp T   &kp Y        &kp U                 &kp I                 &kp O             &kp P        &kp BACKSLASH
-&mt RCTRL ESCAPE  &hml LCTRL A  &hml LEFT_GUI S  &hml LEFT_ALT D  &hml LEFT_SHIFT F  &kp G        &kp H        &hmr RIGHT_SHIFT J    &hmr RIGHT_ALT K  &hmr RGUI L  &hmr RIGHT_CONTROL SEMI  &kp APOS
-&kp LSHFT         &lt 2 Z            &kp X            &kp C       &th SCRL_RIGHT V  &th SCRL_LEFT B     &th SCRL_DOWN N &th SCRL_UP M                 &kp COMMA             &kp DOT           &lt 2 FSLH     &sl 6
-                                                    &lt 5 TAB     &lt 4 ENTER        &lt 1 ESCAPE    &lt 3 SPACE  &lt 7 BACKSPACE
+&kp TAB     &kp Q    &kp W  &kp E  &lt 3 R  &kp T        &kp Y  &kp U  &kp I       &kp O    &kp P    &kp BACKSLASH
+&kp ESCAPE  &kp A    &kp S  &kp D  &lt 4 F  &kp G        &kp H  &kp J  &kp K       &kp L    &kp SEMI &kp APOS
+&kp LSHFT   &lt 2 Z  &kp X  &kp C  &lt 7 V  &kp B        &kp N  &lt 5 M  &lt 1 COMMA   &kp DOT  &lt 2 FSLH     &sl 6
+                     &mt LCTRL TAB  &mt LGUI ENTER &mt LGUI ESCAPE    &mt LALT SPACE  &mt LSHFT BACKSPACE
             >;
         };
 
         default-dh_without_hrm {
             bindings = <
-&kp TAB  &kp Q  &kp W  &kp E   &kp R   &kp LG(LCTRL)     &kp Y   &kp U   &kp I      &kp O    &kp P  &kp BSPC
-&trans   &kp A  &kp S  &kp D   &kp LA(LCTRL)   &kp LGUI     &kp H   &kp J   &kp K      &kp L    &kp SEMI     &kp APOS
-&trans   &kp Z  &kp X  &kp C   &kp LS(LGUI)   &kp LS(LCTRL)     &kp N   &kp M   &kp COMMA  &kp DOT  &tog 1 &trans
-                       &trans   &trans  &trans    &kp DEL  &kp BACKSPACE
+&kp TAB  &kp DEL         &kp INS      &kp HOME  &kp END     &kp CAPS      &trans  &trans  &trans  &trans  &trans  &trans
+&trans   &kp K_VOL_UP    &kp K_VOL_DN &kp PG_UP &kp PG_DN   &kp PSCRN     &trans  &trans  &trans  &trans  &trans  &trans
+&trans   &trans          &trans       &trans    &trans      &trans        &trans  &trans  &trans  &trans  &trans  &trans
+                       &kp LCTRL       &kp LGUI  &kp ESCAPE    &kp LALT  &kp LSHFT
             >;
         };
  
@@ -289,29 +289,29 @@
 
        super-layer {
             bindings = <
-&kp TAB    &kp Q    &kp W  &kp E  &kp R  &kp T    &trans  &kp LG(LCTRL)     &kp UP   &trans     &tog 1  &trans
-&trans     &kp A    &kp S  &kp D  &kp F  &kp G    &kp LGUI  &kp LA(LCTRL)   &kp LA(LC(RIGHT)) &kp LA(F7) &trans  &trans
-&trans     &kp Z    &kp X  &kp C  &kp V  &kp B    &kp LS(LCTRL) &kp LS(LGUI)  &kp LA(LC(LEFT)) &kp LA(LC(B))  &trans   &trans
-                          &mkp LCLK &mkp RCLK &mkp MB3   &trans  &mkp LCLK
+&kp TAB    &kp Q    &kp W  &kp E  &kp R  &kp T    &kp LS(LG(1))  &kp LS(LG(2))   &kp LS(LG(3))  &kp LS(LG(4)) &kp LS(LG(5))  &kp LS(LG(1))
+&trans     &kp A    &kp S  &kp D  &kp F  &kp G    &kp LG(1)      &kp LG(2)       &kp LG(3)      &kp LG(4)     &kp LG(5)      &kp LG(1)
+&trans     &kp Z    &kp X  &kp C  &kp V  &kp B    &kp LS(LC(C))  &kp LS(LC(V))   &kp LA(LC(LEFT)) &kp LA(LC(B))  &kp LA(LC(RIGHT))   &trans
+                          &mkp LCLK &kp ENTER &mkp MB3   &kp SPACE  &kp BACKSPACE
             >;
         };
 
 
         number {
             bindings = <
-&trans  &kp AT &kp HASH &kp LG(V)        &kp LG(C)          &trans    &kp KP_MULTIPLY     &kp N4  &kp N5  &kp N6  &kp PLUS &none
-&trans  &kp LCTRL  &kp LEFT_GUI  &kp LEFT_ALT  &kp LEFT_SHIFT  &kp PIPE    &kp PERCENT      &kp N1  &kp N2  &kp N3  &kp MINUS &trans
-&none   &trans     &trans        &trans        &trans          &trans    &kp N0              &kp N7  &kp N8  &kp N9  &kp DOT  &trans
-                                 &trans   &trans   &trans      &kp SPACE       &kp BACKSPACE
+&trans  &kp AT     &kp HASH      &kp PIPE        &trans    &trans    &kp KP_MULTIPLY     &kp N4  &kp N5  &kp N6  &kp PLUS &none
+&trans  &kp DLLR    &trans        &trans  	 &trans    &trans    &kp PERCENT         &kp N1  &kp N2  &kp N3  &kp MINUS &trans
+&none   &trans     &trans        &trans          &trans    &trans    &kp N0              &kp N7  &kp N8  &kp N9  &kp DOT  &trans
+                     		 &kp LCTRL       &kp LGUI  &kp ESCAPE    &kp LALT  &kp LSHFT
             >;
         };
 
         fun {
             bindings = <
-&none  &kp F12  &kp F7  &kp F8  &kp F9  &mkp LCLK          &kp LG(N1)   &kp LG(N2)   &kp LG(N3)   &kp LG(N4) &kp LG(N5) &none
-&none  &hml LCTRL F11  &hml LEFT_GUI F4  &hml LEFT_ALT F5  &hml LEFT_SHIFT F6  &kp CLCK     &none  &kp LA(N1)  &kp LG(LS(K)) &none  &kp LCTRL  &none
-&none  &kp F10  &kp F1  &kp F2  &kp F3  &kp PAUSE_BREAK    &kp LG(LS(N1))  &kp LG(LS(N2)) &kp LG(LS(N3)) &kp LG(LS(N4))  &kp LG(LS(N5))     &none
-                        &trans   &trans   &trans           &trans  &trans
+&none  &kp F12  &kp F7  &kp F8  &kp F9  &mkp LCLK          &trans   &trans   &trans   &trans &trans &none
+&none  &kp F11  &kp F4  &kp F5  &kp F6  &mkp CLCK          &trans   &trans   &trans   &trans &trans &none
+&none  &kp F10  &kp F1  &kp F2  &kp F3  &kp PAUSE_BREAK    &trans   &trans   &trans   &trans &trans &none
+                	&kp LCTRL       &kp LGUI  &kp ESCAPE    &kp LALT  &kp LSHFT
             >;
             label = "scroll";
         };
@@ -329,9 +329,9 @@
         direction {
             bindings = <
 &trans      &trans       &trans        &trans        &trans        &trans          &trans  &trans  &trans  &trans       &trans  &kp C_AC_PRINT
-&trans      &sk LCTRL    &sk LEFT_GUI  &sk LEFT_ALT  &sk LEFT_SHIFT      &trans          &kp LEFT_BRACKET  &kp LEFT_PARENTHESIS &kp UP    &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET &trans
-&trans      &trans        &trans        &trans         &trans       &trans          &kp LEFT_BRACE  &kp LEFT &kp DOWN &kp RIGHT &kp RIGHT_BRACE &trans
-                                       &kp LC(LALT)     &kp LSHFT        &trans          &trans  &trans
+&trans      &trans       &trans        &trans        &trans        &trans          &kp LEFT_BRACKET  &kp LEFT_PARENTHESIS &kp UP    &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET &trans
+&trans      &trans       &trans        &trans        &trans        &trans          &kp LEFT_BRACE  &kp LEFT &kp DOWN &kp RIGHT &kp RIGHT_BRACE &trans
+                		       &kp LCTRL       &kp LGUI  &kp ESCAPE    &kp LALT  &kp LSHFT
             >;        
 
         };
