@@ -289,8 +289,8 @@
 
        super-layer {
             bindings = <
-&kp TAB    &kp Q    &kp W  &kp E  &kp R  &kp T    &kp LS(LG(1))  &kp LS(LG(2))   &kp LS(LG(3))  &kp LS(LG(4)) &kp LS(LG(5))  &kp LS(LG(1))
-&trans     &kp A    &kp S  &kp D  &kp F  &kp G    &kp LG(1)      &kp LG(2)       &kp LG(3)      &kp LG(4)     &kp LG(5)      &kp LG(1)
+&kp TAB    &kp Q    &kp W  &kp E  &kp R  &kp T    &kp LS(LG(N1))  &kp LS(LG(N2))   &kp LS(LG(N3))  &kp LS(LG(N4)) &kp LS(LG(N5))  &trans
+&trans     &kp A    &kp S  &kp D  &kp F  &kp G    &kp LG(N1)      &kp LG(N2)       &kp LG(N3)      &kp LG(N4)     &kp LG(N5)      &trans
 &trans     &kp Z    &kp X  &kp C  &kp V  &kp B    &kp LS(LC(C))  &kp LS(LC(V))   &kp LA(LC(LEFT)) &kp LA(LC(B))  &kp LA(LC(RIGHT))   &trans
                           &mkp LCLK &kp ENTER &mkp MB3   &kp SPACE  &kp BACKSPACE
             >;
