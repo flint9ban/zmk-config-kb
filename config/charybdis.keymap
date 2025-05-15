@@ -262,7 +262,7 @@
 &kp TAB     &kp Q    &kp W  &kp E  &lt 3 R  &kp T        &kp Y  &kp U  &kp I       &kp O    &kp P    &kp BACKSLASH
 &kp ESCAPE  &kp A    &kp S  &kp D  &lt 4 F  &kp G        &kp H  &kp J  &kp K       &kp L    &kp SEMI &kp APOS
 &kp LSHFT   &lt 2 Z  &kp X  &kp C  &lt 7 V  &kp B        &kp N  &lt 5 M  &lt 1 COMMA   &kp DOT  &lt 2 FSLH     &sl 6
-                     &mt LCTRL TAB  &mt LGUI ENTER &mt LGUI ESCAPE    &mt LALT SPACE  &mt LSHFT BACKSPACE
+                     &mt LCTRL TAB  &mt LGUI ENTER &mt LA(LCTRL) ESCAPE    &mt LALT SPACE  &mt LSHFT BACKSPACE
             >;
         };
 
@@ -270,7 +270,7 @@
             bindings = <
 &kp TAB  &kp DEL         &kp INS      &kp HOME  &kp END     &kp CAPS      &trans  &trans  &trans  &trans  &trans  &trans
 &trans   &kp K_VOL_UP    &kp K_VOL_DN &kp PG_UP &kp PG_DN   &kp PSCRN     &trans  &trans  &trans  &trans  &trans  &trans
-&trans   &trans          &trans       &trans    &trans      &trans        &trans  &trans  &trans  &trans  &trans  &trans
+&trans   &trans          &trans       &trans    &kp LG(ENTER)      &trans        &trans  &trans  &trans  &trans  &trans  &trans
                        &kp LCTRL       &kp LGUI  &kp ESCAPE    &kp LALT  &kp LSHFT
             >;
         };
