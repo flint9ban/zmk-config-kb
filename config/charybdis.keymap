@@ -328,7 +328,7 @@
         };
         direction {
             bindings = <
-&trans      &trans       &LG(C)        &LG(V)        &trans        &trans          &trans  &trans  &trans  &trans       &trans  &kp C_AC_PRINT
+&trans      &trans       &kp LG(C)     &kp LG(V)     &trans        &trans          &trans  &trans  &trans  &trans       &trans  &kp C_AC_PRINT
 &trans      &trans       &trans        &trans        &trans        &trans          &kp LEFT_BRACKET  &kp LEFT_PARENTHESIS &kp UP    &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET &trans
 &trans      &trans       &trans        &trans        &trans        &trans          &kp LEFT_BRACE  &kp LEFT &kp DOWN &kp RIGHT &kp RIGHT_BRACE &trans
                 		       &kp LCTRL       &kp LGUI  &kp ESCAPE    &kp LALT  &kp LSHFT
