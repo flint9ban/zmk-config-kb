@@ -310,7 +310,7 @@
             bindings = <
 &none  &kp F12  &kp F7  &kp F8  &kp F9  &mkp LCLK          &trans   &trans   &trans   &trans &trans &none
 &none  &kp F11  &kp F4  &kp F5  &kp F6  &mkp CLCK          &trans   &trans   &trans   &trans &trans &none
-&none  &kp F10  &kp F1  &kp F2  &kp F3  &kp PAUSE_BREAK    &trans   &trans   &trans   &trans &trans &none
+&none  &kp F10  &kp F1  &kp F2  &kp F3  &kp PAUSE_BREAK    &trans   &trans   &mkp LCLK   &trans &trans &none
                 	&kp LCTRL       &kp LGUI  &kp ESCAPE    &kp LALT  &kp LSHFT
             >;
             label = "scroll";
@@ -328,7 +328,7 @@
         };
         direction {
             bindings = <
-&trans      &trans       &trans        &trans        &trans        &trans          &trans  &trans  &trans  &trans       &trans  &kp C_AC_PRINT
+&trans      &trans       &LG(C)        &LG(V)        &trans        &trans          &trans  &trans  &trans  &trans       &trans  &kp C_AC_PRINT
 &trans      &trans       &trans        &trans        &trans        &trans          &kp LEFT_BRACKET  &kp LEFT_PARENTHESIS &kp UP    &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET &trans
 &trans      &trans       &trans        &trans        &trans        &trans          &kp LEFT_BRACE  &kp LEFT &kp DOWN &kp RIGHT &kp RIGHT_BRACE &trans
                 		       &kp LCTRL       &kp LGUI  &kp ESCAPE    &kp LALT  &kp LSHFT
