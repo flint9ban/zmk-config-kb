@@ -10,6 +10,12 @@
     release-after-ms = <60000>;
 };
 
+&mt {
+            tapping-term-ms = <300>;    // <---[[moderate duration]]
+            quick-tap-ms = <175>;
+            require-prior-idle-ms = <250>;
+};
+
 / {
    macros {
         tmk: tmk{
