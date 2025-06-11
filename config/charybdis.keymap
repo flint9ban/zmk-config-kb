@@ -84,7 +84,7 @@
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans    &kp LS(LG(N1))  &kp LS(LG(N2))   &kp LS(LG(N3))  &kp LS(LG(N4)) &kp LS(LG(N5))  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &kp LG(N1)      &kp LG(N2)       &kp LG(N3)      &kp LG(N4)     &kp LG(N5)      &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans          &trans           &trans          &trans         &trans          &trans
+&trans  &trans  &trans  &trans  &mkp RCLK &mkp LCLK    &trans          &trans           &trans          &trans         &trans          &trans
                         &trans  &trans  &trans    &trans  &mkp MB3
             >;
 
