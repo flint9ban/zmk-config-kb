@@ -1,4 +1,4 @@
-m#include <behaviors/mouse_keys.dtsi>
+#include <behaviors/mouse_keys.dtsi>
 #include "helper.h"
 #include "greek.dtsi"
 #include <behaviors.dtsi>
