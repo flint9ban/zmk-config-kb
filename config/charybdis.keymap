@@ -71,7 +71,7 @@
 &trans   &kp CAPS    &kp PSCRN  &kp K_VOL_UP &kp K_VOL_DN &mkp MB3    &kp HOME  &kp END     &kp INS   &kp DEL  &kp BACKSPACE  &trans
                          &trans  &trans  &trans        &kp LALT  &kp LSHFT
             >;
-        }
+        };
  
 
         scroll {
